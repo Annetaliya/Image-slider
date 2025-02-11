@@ -1,0 +1,11 @@
+img{
+    object-fit: contain;
+    width: 100%;
+    
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    
+}
