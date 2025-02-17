@@ -16,13 +16,24 @@
         function createRandom(number){
             return Math.floor(Math.random() * (number + 1))
         }
+        
+        function createHexColor() {
+            const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
+            let hex = '#';
+            for (let i = 0; i < 6; i++) {
+                hex += Math.floor(Math.random() * arr.length)
+            }
+            document.body.backgroundColor = hex;
+        }
+        
+      
 
         function generateRandom() {
             const rndCol = `rgb(${createRandom(255)} ${createRandom(255)} ${createRandom(255)})`;
             document.body.style.background = rndCol;
         }
         btn.addEventListener('click', generateRandom)
-        btn2.removeEventListener('click', generateRandom)
+        btn2.addEventListener('click', createHexColor)
 
 
     </script>
