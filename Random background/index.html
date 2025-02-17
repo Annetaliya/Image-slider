@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title></title>
+
+    </head>
+    <body>
+        <h1>Random color generatore</h1>
+        <button id="btn">Click Me!</button>
+        <button id="btn2">Remove Color</button>
+    <script>
+        const btn = document.querySelector('button');
+        const btn2 = document.getElementById('btn2')
+        function createRandom(number){
+            return Math.floor(Math.random() * (number + 1))
+        }
+
+        function generateRandom() {
+            const rndCol = `rgb(${createRandom(255)} ${createRandom(255)} ${createRandom(255)})`;
+            document.body.style.background = rndCol;
+        }
+        btn.addEventListener('click', generateRandom)
+        btn2.removeEventListener('click', generateRandom)
+
+
+    </script>
+    </body>
+</html>

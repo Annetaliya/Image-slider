@@ -17,8 +17,3 @@ next.addEventListener('click', () => {
    console.log(image)
 
 })
-previous.addEventListener('click', () => {
-    images[currentIndex].style.display ='none';
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    images[currentIndex].style.direction = 'block';
-})
