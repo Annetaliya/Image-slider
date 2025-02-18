@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="widhth=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="./style.css">
-        <title>Tabs</title>
-    </head>
-    <body>
-        <div class="parent-container">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-            <div class="main-container">
-                <div>
-                    <img src="./Images/flowers wallpaper.jpg" alt="flowers" width="600px">
-                </div>
-                <div class="text-container">
-                    <button class="btn1">History</button>
-                    <button class="btn2">Vision</button>
-                    <button class="btn3">Goal</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="widhth=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <div class="parent-container">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      </p>
+      <div class="main-container">
+        <div>
+          <img
+            src="./Images/flowers wallpaper.jpg"
+            alt="flowers"
+            width="600px"
+          />
         </div>
-        
-    </body>
+        <div class="text-container">
+          <button class="btn1">History</button>
+          <p>hello</p>
+          <button class="btn2">Vision</button>
+          <button class="btn3">Goal</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const array = [
+        {
+          title: "History",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        },
+        {
+          title: "Vision",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        },
+        {
+          title: "Goal",
+          content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        },
+      ];
+      const btn1 = document.querySelectorAll('button');
+      const p = document.createElement('p');
+      let currentIndex = 0;
+      btn1.forEach((item, index) => {
+        if (index === currentIndex) {
+            
+        }
+      })
+      console.log(btn1[0].innerHTML)
+    </script>
+  </body>
 </html>
